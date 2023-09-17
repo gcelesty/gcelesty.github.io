@@ -45,12 +45,13 @@ nav {
 }
 nav ul {
     list-style-type: none;
-    padding: 0; 
+    padding: 0;
     margin: 0;
+    text-align: center;
 }
 nav li {
-    display: center; 
-    margin-right: 10px; 
+    display: inline-block; /* Display the list items inline */
+    margin-right: 10px;
     padding: 10px;
 }
 nav a {
@@ -72,7 +73,8 @@ main {
 }
 main h2 {
     border-bottom: 2px solid black;
-    grid: 1/2; /* main grid */
+    grid-row: 1/2; /* main grid */
+    grid-column: 1/2; /* main grid */
 }
 main h3 {
     background-color: #2b70ad;
@@ -102,7 +104,6 @@ main .card1 ul {
     list-style-type: none;
     text-align: left;
     grid-row: 2/3; /* card1 grid */
-    padding-left: -20px;
 }
 main .card1 a {
     text-decoration: none;
