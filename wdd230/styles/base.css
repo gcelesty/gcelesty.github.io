@@ -121,16 +121,10 @@ main .card2 p {
 
 /* ---------------------------------following footer---------------------------------*/
 footer {
+    order: 4;
     background-color: #2b70ad;
     color: white;
     padding: 10px; 
     width: 100%;
     position: relative;
-    order: 4;
 }
-
-/* ---------------------------------following: footer last modified--------------------------------- */
-/*footer #lastModified {
-    color: rgb(188, 247, 26);
-    font-size: 1.3rem;
-}*/
