@@ -131,5 +131,6 @@ footer {
 
 /* ---------------------------------following: footer last modified--------------------------------- */
 footer #lastModified {
-    color: rgb(0, 0, 0);
+    color: rgb(188, 247, 26);
+    font-size: 1.5rem;
 }
