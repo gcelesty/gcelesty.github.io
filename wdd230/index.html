@@ -8,7 +8,11 @@
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     </head>
-    <body class="container">
+    <body>
+        <header>
+            <h1 class="name">Celeste George</h1>
+            <img src="images/profile-pic-of-celeste.jpg" alt="profile image of celeste">
+        </header>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -18,10 +22,6 @@
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng">Scripture</a></li>
             </ul>
         </nav>
-        <header>
-            <h1 class="name">Celeste George</h1>
-            <img src="images/profile-pic-of-celeste.jpg" alt="profile image of celeste">
-        </header>
         <main>
             <div class="main-title">
                 <h2 class="main">WDD 230: Web Frontend Development</h2>
@@ -60,18 +60,12 @@
         </main>
         <footer>
             <p>
-                &copy; <script>document.write(new Date().getFullYear())</script>
-                <br>
+                &copy; <span id="currentyear"></span>
                 Celeste George
-                <br>
                 United States of America
             </p>
-            <p class="highlight" id="lastModified">Last Modified:
-                <script>
-                    document.write(document.lastModified)
-                </script>
-            </p>
+            <p id="lastModified">Last Modified: </p>
         </footer>
-        <a href="scripts/getDates.js"></a>
+        <script src="scripts/getDates.js"></script>
     </body>
 </html>
