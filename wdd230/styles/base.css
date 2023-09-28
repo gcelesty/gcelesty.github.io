@@ -22,15 +22,12 @@ header > img {
     max-height: 150px; 
     box-shadow: 1px 1px 10px black;
     border-radius: 5px; 
-    margin-left: auto;
+    margin: auto;
     grid-column: 1/2; /* header grid */
     grid-row: 1; /* header grid */
 }
 header h1 {
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 20px;
-    text-align: left;
+    margin: auto;
     grid-column: 2/3; /* header grid */
     grid-row: 1; /* header grid */
 }
@@ -42,7 +39,7 @@ header button {
     box-shadow: 2px 2px 1px 1px rgba(0, 0, 255, .2);
     width: 3rem;
     height: 3rem;
-    text-align: center;
+    margin: auto;
     grid-column: 3/4; /* header grid */
     grid-row: 1; /* header grid */
 }
@@ -52,19 +49,6 @@ header button:hover {
 }
 #menu::before {
 	content: "☰";
-}
-
-/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
-.open li a {
-	display: block;
-	width: 100%;
-}
-#menu.open {
-    width: 3rem;
-}
-#menu.open::before {
-	content: "✖";
-    font-size: 1.5rem;
 }
 
 /* ---------------------------------following: nav for home/site plan/chamber/byui/scripture---------------------------------*/
@@ -96,6 +80,18 @@ nav a {
     color: white;
 }
 
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+#menu.open {
+    width: 3rem;
+}
+#menu.open::before {
+	content: "✖";
+    font-size: 1.5rem;
+}
 
 /* ---------------------------------following: main--------------------------------- */
 main {
