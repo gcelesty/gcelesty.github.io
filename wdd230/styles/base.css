@@ -153,6 +153,11 @@ main .card2 p {
     margin: 5px;
 }
 
+#houston {
+    width: 100%;
+    height: 100%;
+ }
+
 /* ---------------------------------following footer---------------------------------*/
 footer {
     order: 4;
