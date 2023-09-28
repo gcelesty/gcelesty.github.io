@@ -10,7 +10,7 @@ body {
 /* ---------------------------------following: header name and photo---------------------------------*/
 header {
     order: 1;
-    background-color: #2b70ad;
+    background-color: #ca317e;
     color: white;
     padding: 10px; 
     width: 100%;
@@ -34,16 +34,48 @@ header h1 {
     grid-column: 2/3; /* header grid */
     grid-row: 1; /* header grid */
 }
+header button {
+    background-color: #333333;
+    color: #f0b4e1;
+    padding: 0.5rem;
+    border-radius: 25%;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 255, .2);
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    grid-column: 3/4; /* header grid */
+    grid-row: 1; /* header grid */
+}
+header button:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+#menu::before {
+	content: "☰";
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li a {
+	display: block;
+	width: 100%;
+}
+#menu.open {
+    width: 3rem;
+}
+#menu.open::before {
+	content: "✖";
+    font-size: 1.5rem;
+}
 
 /* ---------------------------------following: nav for home/site plan/chamber/byui/scripture---------------------------------*/
 nav {
     order: 2;
-    background-color: black;
+    background-color: rgb(107, 11, 151);
     padding: 10px;
     width: 100%;
     position: relative;
 }
-nav ul {
+nav ol {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -54,10 +86,16 @@ nav li {
     margin-right: 10px;
     padding: 10px;
 }
+nav li:hover {
+    background-color: #e72c54;
+    color: #FFF8EB;
+    text-decoration: underline;
+}
 nav a {
     text-decoration: none;
     color: white;
 }
+
 
 /* ---------------------------------following: main--------------------------------- */
 main {
@@ -77,7 +115,7 @@ main h2 {
     grid-column: 1/2; /* main grid */
 }
 main h3 {
-    background-color: #2b70ad;
+    background-color: #ca317e;
     color: white;
     padding: 0px; 
     width: 100%;
@@ -90,7 +128,7 @@ main .card1 {
     font-size: 1.2rem;
     padding: 0px;
     position: relative;
-    border: 1px solid #2b70ad; 
+    border: 1px solid #ca317e; 
     display: grid; /* card1 grid */
 }
 main .card1 ul {
@@ -109,7 +147,7 @@ main .card2 {
     font-size: 1.2rem;
     padding: 0px;
     position: relative;
-    border: 1px solid #2b70ad;
+    border: 1px solid #ca317e;
     display: grid; /* card2 grid */
 }
 main .card2 #info {
@@ -122,7 +160,7 @@ main .card2 p {
 /* ---------------------------------following footer---------------------------------*/
 footer {
     order: 4;
-    background-color: #2b70ad;
+    background-color: #ca317e;
     color: white;
     padding: 10px; 
     width: 100%;
