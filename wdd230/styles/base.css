@@ -11,11 +11,13 @@ body {
 header {
     order: 1;
     background-color: #ca317e;
-    color: white;
-    padding: 10px; 
     width: 100%;
-    position: relative;
-    display: grid; /* header grid */
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    justify-content: space-evenly;
 }
 header > img {
     max-width: 100%; 
@@ -80,17 +82,32 @@ nav a {
     color: white;
 }
 
-/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
-.open li {
-	display: block;
-	width: 100%;
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    header {
+        display: grid;
+    }
+
+    header button {
+        grid-column: 3/4;
+        grid-row: 1;
+    }
 }
-#menu.open {
-    width: 3rem;
-}
-#menu.open::before {
-	content: "✖";
-    font-size: 1.5rem;
+
+/* Media queries for even smaller screens */
+@media (max-width: 480px) {
+    .open li {
+        display: block;
+	    width: 100%;
+    }
+    #menu.open {
+        width: 3rem;
+    }
+    #menu.open::before {
+        content: "✖";
+        font-size: 1.5rem;
+    }
 }
 
 /* ---------------------------------following: main--------------------------------- */
