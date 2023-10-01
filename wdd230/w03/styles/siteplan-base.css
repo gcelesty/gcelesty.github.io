@@ -90,3 +90,18 @@ footer {
     padding: 20px; 
     width: 100%;
 }
+div{
+    display: grid;
+}
+.website {
+    grid-column: 1/2;
+}
+.moblie {
+    grid-column: 2/3;
+}
+img {
+    max-width: 100%; 
+    max-height: 100%; 
+    box-shadow: 1px 1px 10px black;
+    border-radius: 5px; 
+}
