@@ -7,11 +7,11 @@ header, h2 {
 header {
     background-color: #F79489;
     width: 100%;
-    color: white;
+    color: black;
 }
 main h2 {
     background-color: #B95C50;
-    color: white;
+    color: black;
     padding: 0px; 
     width: 100%;
     margin: 0px;
@@ -23,7 +23,7 @@ p.schema,
 p.roboto {
     font-family: "Roboto", sans-serif;
     background-color: #DEB3AD;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +34,7 @@ p.roboto {
 p.trirong {
     font-family: "Trirong", serif;
     background-color: #DEB3AD;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +46,7 @@ p.trirong {
 p.primary {
     font-family: "Roboto", sans-serif;
     background-color: #F79489;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +58,7 @@ p.primary {
 p.secondary {
     font-family: "Roboto", sans-serif;
     background-color: #B95C50;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,7 +70,7 @@ p.secondary {
 p.accent {
     font-family: "Roboto", sans-serif;
     background-color: #DEB3AD;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,7 +82,7 @@ p.accent {
 footer {
     font-family: "Roboto", sans-serif;
     background-color: #F79489;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
