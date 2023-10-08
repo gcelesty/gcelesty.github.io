@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WDD 230 - Web Frontend Development Celeste George Houston Chamber of Commerce Home Page">
+    <meta name="author" content="Celeste George">
+
+    <meta property="og:title" content="Celeste George WDD230 Frontend Development Chamber Page">
+    <meta property="og:type" content="Celeste George WDD230 Houst chamber page that will follow closely to the site plan tab on the home page.">
+    <meta property="og:url" content="https://gcelesty.github.io/wdd230/chamber/">
+    <meta property="og:image" content="https://gcelesty.github.io/wdd230/chamber/images/">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <title>Houston Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/houston.jpg" alt="Hero IMG - Houston Skyline at Night">
+        <h1 class="title">Houston Chamber of Commerce</h1>
+        <button class="join">JOIN THE CHAMBER</button>
+    </header>
+    <nav>
+        <ol>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ol>
+    </nav>
+    <main>
+        <section class="events">
+            <h2>Events</h2>
+            <div>
+                <p>Series of Unfortune Events</p>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div>
+                <p>Cloudy with a Chance of Meatballs</p>
+            </div>
+        </section>
+        <section class="spotlights">
+            <h2>Spotlights</h2>
+            <div id="spot1">
+                <h3>spotlight 1</h3>
+            </div>
+            <div id="spot2">
+                <h3>spotlight 2</h3>
+            </div>
+            <div id="spot3">
+                <h3>spotlight 3</h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact">
+            <p>Contact Information | Houston, Texas | (888)-888-8888</p>
+        </div>
+        <div class="my-footer">
+            <p>
+                &copy; <span id="currentyear"></span>
+                | Celeste George | 
+                United States of America
+            </p>
+            <p id="lastModified">Last Modified: </p>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>
