@@ -24,10 +24,7 @@ main {
 h2, h3 {
     background-color: #F79489;
     margin: 0;
-}
-h2 {
     padding: 10px;
-    border-bottom: black;
 }
 .events p, .weather p, .spotlights p {
     background-color: #DEB3AD;
