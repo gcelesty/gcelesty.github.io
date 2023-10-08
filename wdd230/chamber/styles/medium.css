@@ -1,15 +1,6 @@
-@media screen and (min-width: 600px) {
-    header #menu {
-        display: none;
-    }
+@media screen and (max-width: 600px) {
     nav {
-        display: block;
+      display: none; /* Menu is hidden on smaller screens */
     }
-    nav ol {
-
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        font-size: 1.2rem;
-    }
-}
+  }
+  
