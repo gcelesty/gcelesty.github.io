@@ -1,6 +1,4 @@
 body {
-    background-color: #F79489;
-    color: black;
     font-family: "Roboto", sans-serif;
 }
 h1, h2, h3, ol{
@@ -8,12 +6,90 @@ h1, h2, h3, ol{
 }
 header > img {
     width: 100%;
+    position: relative;
 }
+
+nav #menu {
+    background-color: #5C5C5C;
+    color: #fff;
+    padding: 0.2rem;
+    border-radius: 25%;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 255, .2);
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    left: 2rem;
+}
+nav #menu:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+nav #menu::before {
+	content: "☰";
+}
+
+nav {
+    text-align: center;    
+    background-color: #5C5C5C;
+    display: none;
+}
+nav li { 
+    list-style: none;
+    padding: 0.4rem;
+}
+nav li a {    
+    text-decoration: none;
+    color: #fff;
+}
+nav li:hover {
+    background-color: #000;
+    color: #FFF8EB;
+    text-decoration: underline;
+}
+
+.open {display: block;}
+
+
 h1 {
-    position: absolute;
+    position: center;
     color: rgb(255, 255, 255);
     left: 18rem;
     top: 2rem;
     background-color: rgb(41, 41, 41, 0.8);
     padding: 0 1rem;
+}
+main {
+    display: grid;
+    gap: 20px 50px;
+}
+h2, h3 {
+    background-color: #F79489;
+}
+.events {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    border-style: solid;
+    border-radius: 10px;
+}
+.weather {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    border-style: solid;
+    border-radius: 10px;
+}
+.spotlights {
+    grid-row: 1/4;
+    grid-column: 2/3;
+    border-style: solid;
+    border-radius: 10px;
+}
+footer {
+    font-family: "Roboto", sans-serif;
+    background-color: #F79489;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; 
+    width: 100%;
 }
