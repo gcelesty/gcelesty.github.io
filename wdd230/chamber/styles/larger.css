@@ -2,7 +2,7 @@
   #menu {
     display: none;
   }
-  li {
+  nav li {
     display: block;
     background-color: #F79489;
     color: black;
@@ -14,7 +14,6 @@
   }
   a:hover {
     background-color: #B95C50;
-    padding: 20px;
   }
   nav {
     position: absolute;
