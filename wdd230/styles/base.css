@@ -50,9 +50,6 @@ header button:hover {
     box-shadow: none;
     cursor: pointer;
 }
-#menu::before {
-	content: "☰";
-}
 
 /*---------------------------------following: dark mode---------------------------------*/
 #darkMode {
