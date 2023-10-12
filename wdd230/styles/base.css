@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: white;
 }
 
 /* ---------------------------------following: header name and photo---------------------------------*/
@@ -51,6 +52,20 @@ header button:hover {
 }
 #menu::before {
 	content: "☰";
+}
+
+/*---------------------------------following: dark mode---------------------------------*/
+#darkMode {
+    grid-column: 4/5;
+    grid-row: 1;
+    top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
+#darkMode:hover{
+    box-shadow: none;
+    border: none;
 }
 
 /* ---------------------------------following: nav for home/site plan/chamber/byui/scripture---------------------------------*/
