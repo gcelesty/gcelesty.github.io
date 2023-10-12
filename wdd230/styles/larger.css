@@ -1,0 +1,15 @@
+@media (max-width: 769px) {
+    .open li {
+        display: block;
+	    width: 100%;
+    }
+    #menu.open {
+        width: 3rem;
+    }
+    .menu-items {
+        display: none;
+    }
+    .hamburger-button {
+        display: block;
+    }
+}

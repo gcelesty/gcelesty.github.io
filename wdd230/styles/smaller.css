@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    header {
+        display: grid;
+    }
+    header button {
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+    .menu-items {
+        display: none;
+    }
+    .hamburger-button {
+        display: block;
+    }
+}

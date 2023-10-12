@@ -1,11 +1,11 @@
+/*Hamburger Button*/
 const button = document.querySelector("#menu");
-const nav = document.querySelector("nav");
+const navItems = document.querySelector(".menu-items");
 
 button.addEventListener("click", () => {
-  nav.classList.toggle("open");
   button.classList.toggle("open");
+  navItems.classList.toggle("open");
 });
-
 
 /*Dark mode*/
 const darkMode = document.querySelector("#darkMode");
