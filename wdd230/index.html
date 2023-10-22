@@ -72,7 +72,13 @@
         <section class="card2">
             <h3>Information</h3>
             <p>Houston, Texas<span id="location"></span></p>
-            <p>Current weather: <span id="weather"></span></p>
+            <div id="weather-container">
+                <p>Current weather: <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
             <p>Number of page visits: <span id="visits"></span></p>
         </section>
         <div class="div-maps">
@@ -89,5 +95,6 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

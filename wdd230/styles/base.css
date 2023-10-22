@@ -231,6 +231,25 @@ main .card2 p {
     margin: 5px;
 }
 
+/* ---------------------------------following: weather information---------------------------------*/
+.information {
+    text-align: center;
+}
+#weather-container {
+    text-align: center;
+}
+#weather-container #current-temp {
+    font-weight: bold;
+}
+#weather-container #weather-icon {
+    background-color: #F79489;
+    border-radius: 35px;
+    margin: 1rem;
+}
+#weather-container figcaption {
+    font-weight: bold;
+}
+
 /* --------------------------------- iframe maps---------------------------------*/
 main .div-maps {
     padding-bottom: 30%;
