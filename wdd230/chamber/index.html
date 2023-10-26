@@ -24,7 +24,12 @@
 </head>
 <body>
     <header>
-        <img src="images/houston2.jpg" alt="Hero IMG - Houston Skyline at Night">
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/houston-sky.webp">
+                <img src="images/houston-sky.webp" alt="houston skyline">
+            </picture>
+        </div>
         <h1 class="title">Houston <br>Chamber of Commerce</h1>
         <button class="join">JOIN THE CHAMBER</button>
     </header>
