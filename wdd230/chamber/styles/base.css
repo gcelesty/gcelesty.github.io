@@ -111,26 +111,27 @@ picture img {
     }
 
 }
-#discover-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    
-}
-#gallery {
-    grid-column: 1 / span 2;
-}
-#information-side {
-    grid-column: 1;
-}
 #container {
-    background-color: #5C5C5C;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-rows: auto;
+
+    background-color: #DEB3AD;
     padding: 1rem;
     text-align: center;
 }
+#gallery {
+    grid-column: 2/3;
+    grid-row: 1;
+}
+#information-side {
+    grid-column: 1/2;
+    grid-row: 1;
+}
 figcaption {
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 #gallery img {
     transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
