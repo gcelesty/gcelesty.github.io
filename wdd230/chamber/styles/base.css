@@ -147,7 +147,7 @@ picture img {
     grid-column: 1/2;
     grid-row: 1;
 }
-figcaption {
+#gallery p {
     text-align: center;
     color: #000;
 }
