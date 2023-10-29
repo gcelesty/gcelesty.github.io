@@ -90,6 +90,24 @@ footer {
     text-align: center;
 }
 
+/* last visit */
+i {
+    font-size: 2rem;
+    color: #fff;
+    order: 1;
+  
+    padding: 0.1rem;
+    background-color: #000;
+    border-radius: 30%;
+}
+
+#last-visit {
+    text-align: center;
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 /*---------- discovery page css ----------*/
 #gallery-title {
     display: block;
