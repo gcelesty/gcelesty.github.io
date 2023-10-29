@@ -114,14 +114,14 @@ picture img {
 #discover-main {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 1rem;
+    gap: 20px;
     
 }
 #gallery {
-    grid-column: 2/3;
+    grid-column: 1 / span 2;
 }
-#aside-discover {
-    grid-column: 1/2;
+#information-side {
+    grid-column: 1;
 }
 #container {
     background-color: #5C5C5C;
