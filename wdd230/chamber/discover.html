@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Houston Chamber of Commerce Home Page">
+    <meta name="author" content="Celeste George">
+
+    <meta property="og:title" content="Houston Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gcelesty.github.io/wdd230/chamber/">
+    <meta property="og:image" content="https://gcelesty.github.io/wdd230/chamber/images/houston2.jpg">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <title>Discover - Houston Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/houston-sky.webp">
+                <img src="images/houston-sky.webp" alt="houston skyline">
+            </picture>
+        </div>
+        <h1 class="title">Houston <br>Chamber of Commerce</h1>
+        <button class="join">JOIN THE CHAMBER</button>
+    </header>
+    <nav>
+        <button id="menu">+</button>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ol>
+    </nav>
+    <main id="discover-main">
+       <h1 id="gallery-title">Discover in Houston</h1>
+        <div id="container">
+
+            <div id="gallery">
+                <picture>
+                    <figcaption>Battleship</figcaption>
+                    <source media="(min-width: 960px)" srcset="images/battleship-large.webp">
+                    <img src="images/battleship-small.webp" alt="Battleship" loading="lazy" width="250" height="150">
+                </picture>
+                <picture>
+                    <figcaption>Courthouse</figcaption>
+                    <source media="(min-width: 960px)" srcset="images/courthouse-large.webp">
+                    <img src="images/courthouse-small.webp" alt="Courthouse" loading="lazy" width="250" height="150">
+                </picture>
+                <picture>
+                    <figcaption>National Bank</figcaption>
+                    <source media="(min-width: 960px)" srcset="images/nationalbank-large.webp">
+                    <img src="images/nationalbank-small.webp" alt="National Bank" loading="lazy" width="250" height="150">
+                </picture>
+                <picture>
+                    <figcaption>Rice University</figcaption>
+                    <source media="(min-width: 960px)" srcset="images/rice-large.webp">
+                    <img src="images/rice-small.webp" alt="Rice University" loading="lazy" width="250" height="150">
+                </picture>
+                <picture>
+                    <figcaption>San Jacinto Monument</figcaption>
+                    <source media="(min-width: 960px)" srcset="images/sanjacinto-large.webp">
+                    <img src="images/sanjacinto-small.webp" alt="San Jacinto Monument" loading="lazy" width="250" height="150">
+                </picture>
+                <picture>
+                    <figcaption>NASA Space Center</figcaption>
+                    <source media="(min-width: 960px)" srcset="images/space-large.webp">
+                    <img src="images/space-small.webp" alt="NASA Space Center" loading="lazy" width="250" height="150">
+                </picture>
+            </div>
+
+            <aside id="aside-discover">
+                <section id="demografics">
+                    <h2>Dempgraphics</h2>
+                    <p>Houston: [population]</p>
+                </section>
+                <section id="economy">
+                    <h2>Economy</h2>
+                    <p>[eco info]</p>
+                </section>
+                <section id="map">
+                    <h2>Map</h2>
+                    <h2>City of Houston Office of Business Opportunity</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6927.203617778358!2d-95.37373147695341!3d29.76023525068671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145e95bf50d6047b%3A0xbb67743a32db3969!2sCity%20of%20Houston%20Office%20of%20Business%20Opportunity!5e0!3m2!1sen!2sus!4v1698552865690!5m2!1sen!2sus" width="600" height="450" style="border:0;" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <div id="last-visit"></div>
+
+    <footer>
+        <div class="contact">
+            <p>Houston of Commerce (713) - 837 - 0311</p>
+        </div>
+        <div class="my-info">
+            <p>
+                &copy; <span id="currentyear"></span> | Celeste George | <span id="lastModified">Last Modified:</span> 
+            </p>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/button.js"></script>
+</body>
+</html>
