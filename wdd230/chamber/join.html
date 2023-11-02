@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Houston Chamber of Commerce Join Page">
+    <meta name="author" content="Celeste George">
+
+    <meta property="og:title" content="Houston Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gcelesty.github.io/wdd230/chamber/">
+    <meta property="og:image" content="https://gcelesty.github.io/wdd230/chamber/images/houston2.jpg">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <title>Join - Houston Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 960px)" srcset="images/houston-sky.webp">
+                <img src="images/houston-sky.webp" alt="houston skyline">
+            </picture>
+        </div>
+        <h1 class="title">Houston <br>Chamber of Commerce</h1>
+        <button class="join">JOIN THE CHAMBER</button>
+    </header>
+    <nav>
+        <button id="menu">+</button>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ol>
+    </nav>
+    <main id="join-main">
+
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" id="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label class="top">Title/Position <input type="text" name="title-position" id="title-position"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone Number* <input type="tel" name="telephone" id="phone" required></label>
+                <label class="top">Business/Organization's Name <input type="text" name="business-organization" id="business-organization" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label class="sbs"><input type="radio" name="membership" value="NP">NP Membership is for non profit organizations and there is no fee.</label>
+                <label class="sbs"><input type="radio" name="membership" value="Bronze">Bronze</label>
+                <label class="sbs"><input type="radio" name="membership" value="Silver">Silver</label>
+                <label class="sbs"><input type="radio" name="membership" value="Gold">Gold</label>
+            </fieldset>
+
+            <fieldset id="description">
+                <legend>Business/Organization's description</legend>
+                <label class="top">Description <textarea id="w3review" name="w3review" rows="4" cols="50">Write a description of your business/organization here</textarea></label>
+            </fieldset>
+
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
+
+            <div class="button"><input type="submit" value="Join the Chamber" class="joinBtn"></div>
+
+        </form>
+
+    </main>
+    <div id="last-visit"></div>
+    <footer>
+        <div class="contact">
+            <p>Contact Information | Houston, Texas | (888)-888-8888</p>
+        </div>
+        <div class="my-info">
+            <p>
+                &copy; <span id="currentyear"></span> | Celeste George | <span id="lastModified">Last Modified:</span> 
+            </p>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,3 +1,11 @@
+/* button */
+const menuButton = document.getElementById('menu');
+const navMenu = document.querySelector('nav');
+
+menuButton.addEventListener('click', function() {
+    navMenu.classList.toggle('open'); 
+});
+
 /* get dates */
 document.getElementById("currentyear").innerText = new Date().getFullYear();
 document.getElementById("lastModified").innerText = `Last Modified: ${document.lastModified}`
