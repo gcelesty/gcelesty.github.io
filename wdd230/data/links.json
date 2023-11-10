@@ -1,0 +1,114 @@
+{
+    "weeks": [
+      {
+        "week": "01",
+        "links": [
+          {
+            "url":"./w01/holygrail.html",
+            "title":"Holy Grail"
+          },
+          {
+            "url":"./w01/media-query.html",
+            "title":"Media Query"
+          }
+        ]
+      },
+      {
+        "week": "02",
+        "links": [
+          {
+            "url":"./w02/design.html",
+            "title":"Design"
+          },
+          {
+            "url":"./w02/design-principles.html",
+            "title":"Design Principles"
+          }
+        ]
+      },
+
+      {
+        "week": "03",
+        "links": [
+            {
+                "url":"./lesson03/images/css_combinators.png",
+                "title":"Combinators" 
+            },
+            {
+                "url":"https://codepen.io/gcelesty/pen/wvRXwqd",
+                "title":"Pseudo-Element" 
+            },
+            {
+                "url":"https://codepen.io/gcelesty/pen/oNJyvVb",
+                "title":"CodePen Hamburger"
+            }
+        ]
+      },
+      {
+        "week": "04",
+        "links": [
+            {
+                "url":"https://codepen.io/gcelesty/pen/YzddVYe",
+                "title":"Pseudo-Classes" 
+            }
+        ]
+      },
+      {
+        "week":"05",
+        "links": [
+            {
+                "url":"./lesson05/bom.html",
+                "title":"DOM BoM Manipulation" 
+            },
+            {
+                "url":"https://codepen.io/gcelesty/pen/ZEVZOMO",
+                "title":"CodePen DOM BoM"  
+            }
+        ]
+      },
+      {
+        "week":"06",
+        "links": [
+            {
+                "url":"./lesson06/responsive-images.html",
+                "title":"Responsive Images" 
+            }
+        ]
+      },
+      {
+        "week":"07",
+        "links": [
+            {
+                "url":"./lesson03/lazyload.html",
+                "title":"Lazy Load Images" 
+            }
+        ]
+      },
+      {
+        "week":"08",
+        "links": [
+            {
+                "url":"./w08/tablebuild.html",
+                "title":"Tables" 
+            },
+            {
+                "url":"./w08/index.html",
+                "title":"Forms"  
+            }
+        ]
+      },
+      {
+        "week":"09",
+        "links": [
+            {
+                "url":"./lesson09/new-ward-members.json",
+                "title":"Ward Members" 
+            },
+            {
+                "url":"./lesson09/prophets.html",
+                "title":"Prophets"  
+            }
+        ]
+      }
+    ]
+}

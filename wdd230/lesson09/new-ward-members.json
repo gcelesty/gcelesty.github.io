@@ -1,0 +1,29 @@
+{
+    "familyName": "George",
+    "move": "11-09-2023",
+    "size": 4,
+    "bischopric-visit": true,
+    "familyMembers": [
+      {
+        "name": "David George",
+        "gender": "Male",
+        "birthdate": "09-29-1973"
+      },
+      {
+        "name": "Adriana George",
+        "gender": "Female",
+        "birthdate": "04-18-1976"
+      },
+      {
+        "name": "Celeste George",
+        "gender": "Female",
+        "birthdate": "02-29-2000"
+      },
+      {
+        "name": "Rachel George",
+        "gender": "Female",
+        "birthdate": "02-22-2002"
+      }
+    ]
+  }
+  
