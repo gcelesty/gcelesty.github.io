@@ -1,11 +1,11 @@
 {
     "weeks": [
       {
-        "week": "01",
+        "week": "01: ",
         "links": [
           {
             "url":"./w01/holygrail.html",
-            "title":"Holy Grail"
+            "title":"Holy Grail | "
           },
           {
             "url":"./w01/media-query.html",
@@ -14,11 +14,11 @@
         ]
       },
       {
-        "week": "02",
+        "week": "02: ",
         "links": [
           {
             "url":"./w02/design.html",
-            "title":"Design"
+            "title":"Design | "
           },
           {
             "url":"./w02/design-principles.html",
@@ -28,15 +28,15 @@
       },
 
       {
-        "week": "03",
+        "week": "03: ",
         "links": [
             {
                 "url":"./lesson03/images/css_combinators.png",
-                "title":"Combinators" 
+                "title":"Combinators | " 
             },
             {
                 "url":"https://codepen.io/gcelesty/pen/wvRXwqd",
-                "title":"Pseudo-Element" 
+                "title":"Pseudo-Element | " 
             },
             {
                 "url":"https://codepen.io/gcelesty/pen/oNJyvVb",
@@ -45,7 +45,7 @@
         ]
       },
       {
-        "week": "04",
+        "week": "04: ",
         "links": [
             {
                 "url":"https://codepen.io/gcelesty/pen/YzddVYe",
@@ -54,11 +54,11 @@
         ]
       },
       {
-        "week":"05",
+        "week":"05: ",
         "links": [
             {
                 "url":"./lesson05/bom.html",
-                "title":"DOM BoM Manipulation" 
+                "title":"DOM BoM Manipulation | " 
             },
             {
                 "url":"https://codepen.io/gcelesty/pen/ZEVZOMO",
@@ -67,7 +67,7 @@
         ]
       },
       {
-        "week":"06",
+        "week":"06: ",
         "links": [
             {
                 "url":"./lesson06/responsive-images.html",
@@ -76,7 +76,7 @@
         ]
       },
       {
-        "week":"07",
+        "week":"07: ",
         "links": [
             {
                 "url":"./lesson03/lazyload.html",
@@ -85,11 +85,11 @@
         ]
       },
       {
-        "week":"08",
+        "week":"08: ",
         "links": [
             {
                 "url":"./w08/tablebuild.html",
-                "title":"Tables" 
+                "title":"Tables | " 
             },
             {
                 "url":"./w08/index.html",
@@ -98,11 +98,11 @@
         ]
       },
       {
-        "week":"09",
+        "week":"09: ",
         "links": [
             {
                 "url":"./lesson09/new-ward-members.json",
-                "title":"Ward Members" 
+                "title":"Ward Members | " 
             },
             {
                 "url":"./lesson09/prophets.html",
