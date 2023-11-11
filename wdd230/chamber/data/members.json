@@ -1,0 +1,61 @@
+{
+    "companies": [
+        {
+            "name": "ExxonMobil Campus",
+            "address": "22777 Springwoods Village Pkwy, Spring, TX 77389",
+            "phoneNumber": "(800) 582 - 3645",
+            "websiteURL": "https://corporate.exxonmobil.com/Locations/United-States/Houston-Campus",
+            "image": "images/exxon.webp",
+            "membershipLevel": "NP"
+        },
+        {
+            "name": "Houston Methodist",
+            "address": "6565 Fannin Street, Houston, TX 77030",
+            "phoneNumber": "(713) 790 - 3311",
+            "websiteURL": "https://www.houstonmethodist.org/",
+            "image": "images/",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "University of Houston",
+            "address": "University of Houston, Houston, TX 77204",
+            "phoneNumber": "(713) 743 - 2255",
+            "websiteURL": "https://www.uh.edu/",
+            "image": "images/uofh.webp",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Bank of Houston",
+            "address": "4400 Post Oak Pkwy #2260, Houston, TX 77027",
+            "phoneNumber": "(713) 497 - 1515",
+            "websiteURL": "https://www.bohbank.com/",
+            "image": "images/bank.webp",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Houston Zoo",
+            "address": "6200 Hermann Park Dr, Houston, TX 77030",
+            "phoneNumber": "(713) 533 - 6500",
+            "websiteURL": "https://www.houstonzoo.org/",
+            "image": "images/",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "MD Anderson Cancer Center",
+            "address": "1515 Holcombe Blvd., Houston, TX 77030",
+            "phoneNumber": "(833) 970 - 2702",
+            "websiteURL": "https://www.mdanderson.org/",
+            "image": "images/",
+            "membershipLevel": "NP"
+        },
+        {
+            "name": "Houston Spaceport",
+            "address": "510 Ellington Field, Houston, TX 77034",
+            "phoneNumber": "(281) 233 - 1234",
+            "websiteURL": "https://www.fly2houston.com/spaceport",
+            "image": "images/",
+            "membershipLevel": "Gold"
+        }
+    ]
+
+}

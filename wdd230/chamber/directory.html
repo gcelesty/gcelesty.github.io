@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
-    <title>Houston Chamber of Commerce</title>
+    <title>Directory - Houston Chamber of Commerce</title>
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
@@ -30,8 +30,7 @@
                 <img src="images/houston-sky.webp" alt="houston skyline">
             </picture>
         </div>
-        <h1 class="title">Houston <br>Chamber of Commerce</h1>
-        <button class="join">JOIN THE CHAMBER</button>
+        <h1 class="title">Houston <br>Chamber of Commerce <br>Discovery Page</h1>
     </header>
     <nav>
         <button id="menu">+</button>
@@ -42,34 +41,19 @@
             <li><a href="join.html">Join</a></li>
         </ol>
     </nav>
-    <main>
-        <section class="events">
-            <h2>Events</h2>
-            <div>
-                <p>Series of Unfortune Events</p>
-            </div>
-        </section>
-        <section class="weather">
-            <h2>Weather</h2>
-            <div>
-                <p>Cloudy with a Chance of Meatballs</p>
-            </div>
-        </section>
-        <section class="spotlights">
-            <h2>Spotlights</h2>
-            <div id="spot1">
-                <h3>spotlight 1</h3>
-                <P>paragraph</P>
-            </div>
-            <div id="spot2">
-                <h3>spotlight 2</h3>
-                <P>paragraph</P>
-            </div>
-            <div id="spot3">
-                <h3>spotlight 3</h3>
-                <P>paragraph</P>
-            </div>
-        </section>
+    <main id="main-directory">
+        <label class="top">
+            <select name="subject" id="view">
+                <option value="">select the view &#9662;</option>
+                <option value="grid">grid</option>
+                <option value="column">column</option>
+            </select>
+        </label>
+
+        <div id="card-container"></div>
+
+        <div id="last-visit"></div>
+
     </main>
     <footer>
         <div class="contact">

@@ -58,8 +58,8 @@ if (localStorage.getItem("lastVisitDate")) {
       "Welcome! Let us know if you have any questions.";
   }
 
-  /*Form*/
-/*Time Stamp */
+  /* form */
+/* time stamp */
 
 function setTimestamp() {
     const timestampElement = document.getElementById("timestamp");
@@ -68,10 +68,10 @@ function setTimestamp() {
   }
   setTimestamp();
   
-  // Members Dinamically
+  /* members json data */
   
   const cardContainer = document.querySelector("#card-container");
-  const membersUrl = "https://ggrados.github.io/wdd230/chamber/data/members.json";
+  const membersUrl = "https://gcelesty.github.io/wdd230/chamber/data/members.json";
   
   async function getMembers() {
     try {
@@ -128,3 +128,22 @@ function setTimestamp() {
     getMembers();
   }
   
+  /* drop down menu for directory page */
+
+const changeView = () => {
+  const selector = document.querySelector("#view");
+  const main = document.querySelector("#card-container");
+  const selectedValue = selector.value;
+  if (selectedValue === "column") {
+    main.classList.remove("grid");
+    main.classList.toggle("column");
+  } else if (selectedValue === "grid") {
+    main.classList.remove("column");
+    main.classList.toggle("grid");
+  }
+};
+
+const changeViewVar = document.querySelector("#view");
+if (changeViewVar) {
+  changeViewVar.addEventListener("change", changeView);
+}
