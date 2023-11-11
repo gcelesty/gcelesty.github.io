@@ -65,6 +65,7 @@ function setTimestamp() {
     const timestampElement = document.getElementById("timestamp");
     const currentDate = new Date();
     const formattedTimestamp = currentDate.toLocaleString();
+    timestampElement.textContent = formattedTimestamp;
   }
   setTimestamp();
   
@@ -72,21 +73,24 @@ function setTimestamp() {
   
   const cardContainer = document.querySelector("#card-container");
   const membersUrl = "https://gcelesty.github.io/wdd230/chamber/data/members.json";
+
+  
   
   async function getMembers() {
     try {
       const response = await fetch(membersUrl);
       if (response.ok) {
-        const data = await response.json();
-        console.log(data);
-        displayMembers(data);
+          const data = await response.json();
+          console.log(data);
+          displayMembers(data);
       } else {
-        throw Error(await response.text());
+          throw Error(await response.text());
       }
-    } catch (error) {
+  } catch (error) {
       console.log(error);
-    }
-  }
+  }  
+}
+
   
   function displayMembers(membersData) {
     membersData.companies.forEach((company) => {
@@ -130,20 +134,20 @@ function setTimestamp() {
   
   /* drop down menu for directory page */
 
-const changeView = () => {
-  const selector = document.querySelector("#view");
-  const main = document.querySelector("#card-container");
-  const selectedValue = selector.value;
-  if (selectedValue === "column") {
-    main.classList.remove("grid");
-    main.classList.toggle("column");
-  } else if (selectedValue === "grid") {
-    main.classList.remove("column");
-    main.classList.toggle("grid");
-  }
+  const changeView = () => {
+    const main = document.querySelector("#card-container");
+    const selectedValue = document.querySelector("#view").value;
+    
+    if (selectedValue === "column") {
+        main.classList.remove("grid");
+        main.classList.add("column");
+    } else if (selectedValue === "grid") {
+        main.classList.remove("column");
+        main.classList.add("grid");
+    }
 };
 
 const changeViewVar = document.querySelector("#view");
 if (changeViewVar) {
-  changeViewVar.addEventListener("change", changeView);
+    changeViewVar.addEventListener("change", changeView);
 }
