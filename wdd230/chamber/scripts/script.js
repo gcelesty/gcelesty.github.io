@@ -1,13 +1,10 @@
 /* last modification date*/
 
-//Display the year at the bottom of the page
-const todaysDate = new Date();
-document.getElementById("year").textContent = todaysDate.getFullYear();
+document.getElementById("currentyear").innerText = new Date().getFullYear();
+document.getElementById("lastModified").innerText = `Last Modified: ${document.lastModified}`
 
-// Display the last modified date
-document.getElementById("lastModified").textContent = document.lastModified;
 
-//DropDown Menu Configuration
+/* DropDown Menu Configuration */
 const button = document.querySelector("#menu");
 const navList = document.querySelector("nav");
 button.addEventListener("click", () => {
@@ -21,10 +18,6 @@ const navMenu = document.querySelector('nav');
 menuButton.addEventListener('click', function() {
     navMenu.classList.toggle('open'); 
 });
-
-/* get dates */
-document.getElementById("currentyear").innerText = new Date().getFullYear();
-document.getElementById("lastModified").innerText = `Last Modified: ${document.lastModified}`
 
 /* last visit */
 const msToDays = 84600000; // using to convert to ms to days
@@ -68,13 +61,15 @@ function setTimestamp() {
     timestampElement.textContent = formattedTimestamp;
   }
   setTimestamp();
-  
+
+
+
+
   /* members json data */
-  
+
+
   const cardContainer = document.querySelector("#card-container");
   const membersUrl = "https://gcelesty.github.io/wdd230/chamber/data/members.json";
-
-  
   
   async function getMembers() {
     try {
