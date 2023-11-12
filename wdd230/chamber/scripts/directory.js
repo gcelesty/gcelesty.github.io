@@ -44,6 +44,7 @@
   
       const img = document.createElement("img");
       img.setAttribute("src", company.image);
+      img.setAttribute("alt", `${company.name} Logo`); // Set alt text
   
       article.appendChild(img);
       article.appendChild(h2);
