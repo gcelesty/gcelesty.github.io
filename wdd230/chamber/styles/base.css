@@ -303,6 +303,9 @@ textarea {
     margin-top: 1rem;
     
 }
+#card-container h2 {
+    background-color: #e72c54;
+}
 #main-directory .container img {
     width: 40%;
     display: block;
