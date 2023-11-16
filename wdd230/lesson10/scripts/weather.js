@@ -1,3 +1,5 @@
+// verify website temps match weather api results "https://openweathermap.org/city/2821164"
+
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");

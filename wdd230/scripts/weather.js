@@ -1,9 +1,11 @@
+// verify website temps match weather api results "https://openweathermap.org/city/4699066"
+
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
 const url =
-  "https://api.openweathermap.org/data/2.5/weather?lat=-12.09&lon=-77.06&appid=76cd0cc1ffbcb7fcbc8193cf2c4758e5&units=imperial";
+  "https://api.openweathermap.org/data/2.5/weather?lat=29.77&lon=-95.37&appid=f4c205e2a1d611099e8b56e44ffb3ee2&units=imperial";
 
 async function apiFetch() {
   try {
