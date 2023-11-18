@@ -48,34 +48,76 @@
         <section class="events">
             <h2>Events</h2>
             <div>
-                <p>Series of Unfortune Events</p>
+                <h4>City Council Public Session</h4>
+                <p>
+                    City council meetings are conducted each week on Tuesdays @ 1:30 PM
+                    and Wednesdays beginning at 9:00 AM. Any citizen may speak before 
+                    before council on Tuesday beginning at 2:00 PM. To reserve time to
+                    address City Council, contact City Secretary's Office prior to the
+                    meeting. All Council meetings are open to the public. Meeting end times 
+                    may vary.
+                </p>
+                <h4>Budget & Fiscal Affairs (BFA) Committee Meeting</h4>
+                <p>
+                    The Budget and Fiscal Affairs (BFA) Committee reviews Finance, Human
+                    Resources, Office of Business Opportunity and Fleet Managemant. Committee 
+                    agendas and presentations can be found online. Meeting end times may vary.
+                </p>
             </div>
         </section>
+
         <section class="weather">
             <h2>Weather</h2>
-            <div>
-                <p>Cloudy with a Chance of Meatballs</p>
+            <div class="weather-info-container">
+                <p>Current Temperature in Houston, Texas: <span id="current-temp"></span></p>
+
+                <figure>
+                    <img id="weather-icon" src="" alt="weather logo">
+                    <figcaption></figcaption>
+                </figure>
+
+                <p>3-day Forecast:</p>
+                <div id="three-day-forecast"></div>
             </div>
         </section>
+
         <section class="spotlights">
-            <h2>Spotlights</h2>
+            <h2>Spotlights for Best Companies to Work at</h2>
             <div id="spot1">
-                <h3>spotlight 1</h3>
-                <P>paragraph</P>
+                <h4>Occidental Petroleum</h4>
+                <p>
+                    Occidental Petroleum Corporation is an American company engaged in hydrocarbon 
+                    exploration in the United States, the Middle East, and Colombia as well as 
+                    petrochemical manufacturing in the United States, Canada, and Chile. They have a 
+                    great employee retention with staff members usually staying with the company for 
+                    4.7 years. Average employee here makes $81,778 per year.
+                </p>
             </div>
             <div id="spot2">
-                <h3>spotlight 2</h3>
-                <P>paragraph</P>
+                <h4>ConocoPhillips</h4>
+                <p>
+                    ConocoPhillips has a time-honored tradition of placing safety, health, and environmental 
+                    stewardship at the top of their operating priorities. They are commited to the efficient 
+                    and effective exploration and production of oil and natural gas. They have a 
+                    great employee retention with staff members usually staying with the company for 
+                    5.7 years. Average employee here makes $104,408 per year.
+                </p>
             </div>
             <div id="spot3">
-                <h3>spotlight 3</h3>
-                <P>paragraph</P>
+                <h4>Bracewell LLP</h4>
+                <p>
+                    Bracewell LLP is an international law firm based in Houston, Texas that began in 1945.
+                    The company loves to hire graduates from the University of Houston. Bracewell is a great
+                    place to work and is featured as number 3 on Zippia's list of best companies to work at in
+                    Houston. The average employee here makes $84,249 per year.
+                </p>
             </div>
         </section>
     </main>
+    <div id="last-visit"></div>
     <footer>
         <div class="contact">
-            <p>Houston of Commerce | Call:(713) - 837 - 0311</p>
+            <p>Houston of Commerce | Call: (713) - 837 - 0311</p>
         </div>
         <div class="my-info">
             <p>
@@ -89,6 +131,6 @@
     <script src="scripts/lastmod.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/lastvisit.js"></script>
-    <script src="scripts/timestamp.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
