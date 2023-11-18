@@ -119,6 +119,27 @@ footer {
     font-weight: bold;
 }
 
+/*-------------------------home page: banner invitation------------------------*/
+.banner {
+    display: none;
+    padding: 10px;
+    background-color: #F79489;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#closeBannerBtn {
+    background-color: #fff;
+    color: #F79489;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
 /*-------------last visit-------------------------*/
 i {
     font-size: 2rem;
