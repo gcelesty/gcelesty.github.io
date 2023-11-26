@@ -1,26 +1,42 @@
-@media screen and (min-width: 600px) {
+@media (max-width: 400px) {
   #menu {
-    display: none;
-  }
-  nav li {
     display: block;
-    background-color: #F79489;
-    color: black;
-    list-style-type: none;
-    padding: 20px;
-    opacity: .9;
-    text-align: center;
-    text-decoration: none;
+    background-color: #5C5C5C;
+    color: #fff;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 25%;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 255, .2);
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer; 
+    font-size: 1rem; 
+    content: "☰";
   }
+  #navLinksContainer {
+    display: none;
+    text-align: center;
+  }
+
+  ol {
+    margin-top: 10px;
+  }
+
   a:hover {
     background-color: #B95C50;
   }
-  nav {
-    position: absolute;
-    display: flex;
-    top: 70px;
-    right: 70px;
-    text-decoration: none;
+
+  /*discover*/
+  #container {
+    padding: 10px;
+  }
+
+  #gallery p {
+    margin-top: 10px;
+  }
+
+  #information-side {
+    margin-top: 10px;
   }
 
 }
