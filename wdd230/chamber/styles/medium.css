@@ -31,4 +31,10 @@
         background-color: #5C5C5C;
         border-radius: 5px;
     }
+
+    #gallery img:hover {
+        box-shadow: none;
+        transform: none;
+        filter: none;
+    }
 }
