@@ -1,0 +1,34 @@
+@media screen and (max-width: 600px) {
+    #navLinksContainer {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav ol {
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+        display: block;
+        padding: 10px;
+        background-color: #5C5C5C;
+        border-radius: 5px;
+    }
+}

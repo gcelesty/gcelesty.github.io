@@ -1,42 +1,157 @@
-@media (max-width: 400px) {
-  #menu {
-    display: block;
-    background-color: #5C5C5C;
-    color: #fff;
-    border: none;
-    padding: 0.2rem 0.5rem;
-    border-radius: 25%;
-    box-shadow: 2px 2px 1px 1px rgba(0, 0, 255, .2);
-    width: 2.5rem;
-    height: 2.5rem;
-    cursor: pointer; 
-    font-size: 1rem; 
-    content: "☰";
+@media only screen and (max-width: 601px) {
+
+  /* Hero image in the header */
+  .hero {
+      height: 200px; 
+      padding-bottom: 20px; 
   }
+
+  header h1 {
+      top: 10px; 
+      left: 10px; 
+      font-size: 1.5em; 
+  }
+
+  .join {
+      top: 120px; 
+      left: 10px; 
+      font-size: 0.8em; 
+  }
+
+  /* Navigation */
+  nav {
+      text-align: center;
+  }
+
   #navLinksContainer {
-    display: none;
-    text-align: center;
+      display: none; 
   }
 
-  ol {
-    margin-top: 10px;
+  nav ol {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
 
-  a:hover {
-    background-color: #B95C50;
+  nav li {
+    margin-bottom: 10px;
   }
 
-  /*discover*/
-  #container {
-    padding: 10px;
+  button#menu {
+      display: inline-block;
+      margin-top: 10px;
   }
 
-  #gallery p {
-    margin-top: 10px;
+  /* Main content */
+  main {
+      grid-template-columns: 1fr; 
+      gap: 10px;
+  }
+
+  h2 {
+      font-size: 1.2em; 
+  }
+
+  h3 {
+      padding: 10px;
+  }
+
+  .events p,
+  .spotlights p {
+      padding: 10px; 
+  }
+
+  /* Footer */
+  footer {
+      margin-top: 10px;
+  }
+
+  /* Banner */
+  .banner {
+      padding: 5px; 
+  }
+
+  #closeBannerBtn {
+      padding: 2px 5px; 
+  }
+
+  /* Last visit */
+  i {
+      font-size: 1.5rem; 
+      padding: 0.1rem;
+  }
+
+  #last-visit {
+      font-size: 1rem;
+  }
+
+  /* Discover page */
+  #gallery {
+      grid-column: 1/2; 
+      grid-row: auto; 
   }
 
   #information-side {
-    margin-top: 10px;
+      grid-column: 1/2; 
+      grid-row: auto; 
   }
 
+  #container {
+      padding: 10px; 
+  }
+
+  /* Join page */
+  #join-main {
+      flex-direction: column; 
+  }
+
+  form {
+      width: 100%; 
+  }
+
+  form label.top input,
+  textarea {
+      width: calc(100% - 30px); 
+      margin: 10px 15px; 
+  }
+
+  form label.sbs {
+      text-align: left; 
+  }
+
+  form input.joinBtn {
+      width: 100%; 
+      max-width: none; 
+  }
+
+  /* Benefits and Prices */
+  .benefits h3,
+  .price,
+  .benefits-card {
+      width: 100%; 
+      max-width: none; 
+  }
+
+  .benefits-card ul li {
+      padding: 10px; 
+  }
+
+  /* Thank you page */
+  #main-thank-you h1,
+  #main-thank-you p {
+      padding: 0.5rem 0.2rem; 
+  }
+
+  /* Directory page */
+  #card-container.column,
+  #card-container.grid {
+      width: 100%; 
+      max-width: none; 
+  }
+
+  #card-container .container img {
+      width: 80%; 
+      margin-top: 1rem; 
+      margin-bottom: 0.5rem; 
+  }
 }
