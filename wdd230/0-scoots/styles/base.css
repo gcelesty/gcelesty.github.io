@@ -213,23 +213,8 @@ footer {
 .weather-card:hover { 
     border-width: 10px; 
 }  
-  /*index table*/
-.styled-list li {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease-in-out;
-    margin-bottom: 10px;
-    max-width: 25rem;
-}  
-.styled-list li:hover {
-    background-color: #2980b9;
-}
 .rental-types-tag{
-    background-color:#3498db;
+    background-color: pink;
     border-radius: 5px;
     margin-bottom: 10px;
     padding: 3px;
