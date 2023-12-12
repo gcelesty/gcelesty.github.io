@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="author" content="Celeste George">
+    <meta property="description" content="WDD 230 - Web Front End Development Celeste George Scoot Final Webpage">
+
+    <meta property="og:title" content="Celeste George WDD 230 Scoots Final Webpage">
+    <meta property="og:description" content="Scoot's homepage with links to rental, contact, and reservations page.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="-------------------">
+    <meta property="og:url" content="https://gcelesty.github.io/wdd230/0-scoots">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>Scoots - Home Page</title>
+</head>
+<body>
+    <header>
+        <img class="scooter" src="images/scooter.webp" alt="scooter icon">
+        <h1>Scoots - motor scooter rental</h1>
+
+        <div>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img class="social-media" src="images/facebook-icon.webp" alt="facebook icon">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener norefferer">
+                <img class="social-media" src="images/twitter-icon.webp" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img class="social-media" src="images/instagram-icon.webp" alt="instagram icon">
+            </a>
+        </div>
+    </header>
+
+    <nav id="nav-menu">
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#" title="Home" class="active">Home</a></li>
+            <li><a href="rentals.html" title="Rentals">Rentals</a></li>
+            <li><a href="reservations.html" title="Reservations">Reservations</a></li>
+            <li><a href="contact.html" title="Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-index">
+        <div id="announcementBanner" class="announcement-banner">
+            <div>
+                <strong> Todays max temp: </strong>
+            </div>
+            <p id="max-temp"></p>
+            <button class="close-button" onclick="closeBanner()">Close</button>
+        </div>
+        <div class="hero-container">
+            <picture>
+                <source media="(max-width: 37.5em)" srcset="images/hero-small.webp">
+                <source media="(max-width: 60em)" stcset="images/hero-medium.webp">
+                <img id="hero-image" src="images/hero-large.webp" alt="large hero image" loading="lazy">
+            </picture>
+            <h1 class="hero-text">Zoom through Cozumel</h1>
+            <div class="call-to-action">
+                <a href="reservations.html" title="Reservations">Book now!</a>
+            </div>
+        </div>
+
+        <div id="rental-types">
+            <h2 class="rental-types-tag">Rental Types Summary</h2>
+            <h3 class="rental-types-tag">Scooters</h3>
+                <div>
+                    <p>Honda Metropolitan</p>
+                    <p>49cc</p>
+                    <p>1 person</p>
+                </div>
+                <div>
+                    <img src="images/honda-metro.webp" alt="honda metropolitan" loading="lazy">
+                </div>
+                <div>
+                    <p>Honda Dio</p>
+                    <p>110cc</p>
+                    <p>2 person</p>
+                </div>
+                <div>
+                    <img src="images/honda-dio.webp" alt="honda dio" loading="lazy">
+                </div>
+                <div>
+                    <p>Honda PCX150</p>
+                    <p>149cc</p>
+                    <p>2 person</p>
+                </div>
+                <div>
+                    <img src="images/honda-pcx150" alt="honda pcx150" loading="lazy">
+                </div>
+
+                <h3 class="rental-types-tag">ATVs</h3>
+                <div>
+                    <p>Honda Pioneer 1000</p>
+                    <p>4 person</p>
+                </div>
+                <div>
+                    <img src="images/honda-pioneer" alt="honda pioneer 1000" loading="lazy">
+                </div>
+
+                <h3 class="rental-types-tag">Jeeps</h3>
+                <div>
+                    <p>Jeep Wrangler - 4 door manuel with A/C</p>
+                    <p>5 person</p>
+                </div>
+                <div>
+                    <img src="images/jeep-4door" alt="jeep wrangler 4 door" loading="lazy">
+                </div>
+                <div>
+                    <p>Jeep Wrangler - 2 door - open air - manuel</p>
+                    <p>4 person</p>
+                </div>
+                <div>
+                    <img src="images/jeep-2door" alt="jeep wrangler 2 door" loading="lazy">
+                </div>
+        </div>
+
+        <sections id="weather">
+            <h2>Weather Information</h2>
+            <h4 id="weather-city"></h4>
+            <div class="weather-card">
+                <h4>Today</h4>
+                <h4><span id=current-temp></span> </h4>
+                <figure>
+                    <img id="weather-icon" alt="weather icon">
+                    <figcaption id="fig1" class="weather-fig-caption"></figcaption>
+                </figure>
+                <h5>Humidity</h5>
+                <figcaption id="fig2" class="weather-fig-captions"></figcaption>
+            </div>
+            <div class="weather-card">
+                <h2>Weather Forecast</h2>
+                <h4><span id="forecast-day-1"></span> </h4>
+                <h4><span id="forecast-temp-1"></span> </h4>
+                <figure>
+                    <img id="weather-icon1" class="w-icon" alt="weather icon">
+                    <figcaption id="fig3" class="weather=fig-captions"></figcaption>
+                </figure>
+            </div>
+        </sections>
+    </main>
+
+    <footer>
+        <div id="contact-info">
+            <img id="footer-img" src="images/scooter.webp" loading="lazy" alt="scooter-icon">
+            <h4>Cozumel, Mexico</h4>
+            <h4>Contact us!</h4>
+            <h4>+52 987 - 872 - 9770</h4>
+        </div>
+
+        <div class="my-info">
+            <p>
+                &copy; <span id="currentyear"></span>
+                | Celeste George | 
+                United States of America
+            </p>
+            <p id="lastModified">Last Modified: </p>
+        </div>
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/lastModified.js"></script>
+</body>
+</html>

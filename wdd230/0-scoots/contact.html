@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="author" content="Celeste George">
+    <meta property="description" content="WDD 230 - Web Front End Development Celeste George Scoot Final Webpage">
+
+    <meta property="og:title" content="Celeste George WDD 230 Scoots Final Webpage">
+    <meta property="og:description" content="Scoot's contact page.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="-------------------">
+    <meta property="og:url" content="https://gcelesty.github.io/wdd230/0-scoots">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>Scoots - Contacts Page</title>
+</head>
+<body>
+    <header>
+        <img class="scooter" src="images/scooter.webp" alt="scooter icon">
+        <h1>Scoots - motor scooter rental company</h1>
+    </header>
+
+    <nav id="nav-menu">
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="rentals.html" title="Rentals">Rentals</a></li>
+            <li><a href="reservations.html" title="Reservations">Reservations</a></li>
+            <li><a href="#" title="Contact" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <div id="contact-info">
+            <img id="footer-img" src="images/scooter.webp" loading="lazy" alt="scooter-icon">
+            <h4>Cozumel, Mexico</h4>
+            <h4>Contact us!</h4>
+            <h4>+52 987 - 872 - 9770</h4>
+        </div>
+
+        <div class="my-info">
+            <p>
+                &copy; <span id="currentyear"></span>
+                | Celeste George | 
+                United States of America
+            </p>
+            <p id="lastModified">Last Modified: </p>
+        </div>
+    </footer>
+
+    <script src="scripts/lastModified.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>
