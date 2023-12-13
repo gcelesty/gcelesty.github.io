@@ -361,16 +361,16 @@ form label.top input:required:valid {
 
 
 /*----------------------- thank you page -------------------*/
-h1, p{
+#main-thank-you h1, #main-thank-you p{
     text-align: center;
 }
-h1 {
+#main-thank-you h1 {
     color: white;
     background-color: #ad023b;
     padding: 40px;
     margin: 0;
 }
-p {
+#main-thank-you p {
     background-color: #f7bace;
     padding: 40px;
 }
