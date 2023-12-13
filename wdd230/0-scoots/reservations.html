@@ -27,7 +27,7 @@
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                 <img class="social-media" src="images/facebook-icon.webp" alt="facebook icon">
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferer">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                 <img class="social-media" src="images/twitter-icon.webp" alt="twitter icon">
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
@@ -45,6 +45,31 @@
             <li><a href="contact.html" title="Contact">Contact</a></li>
         </ul>
     </nav>
+
+    <main id="reserve-main">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">Name* <input type="text" name="name" id="name" required></label>
+                <label class="top">Phone Number* <input type="tel" name="telephone" id="phone" required></label>
+                <label class="top">Email Address* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">State or Country* <input type="text" name="home" id="home" required></label>
+                <label class="top">Cruise Line (if applicable) <input type="text" name="cruise" id="cruise"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reservation Information</legend>
+                <label class="top">Reservation Date* <input type="date" name="date" required></label>
+                <label class="top">Period of Reservation* <input type="text" name="period" required></label>
+                <label class="top">Rental Type* <input type="text" name="type" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label class="top">Comments/Special Accomodations <br><textarea name="w3review" rows="5" cols="53" placeholder="ex. location of drop-off"></textarea>
+            </fieldset>
+        </form>
+    </main>
 
     <footer>
         <div id="contact-info">
