@@ -360,6 +360,22 @@ form label.top input:required:valid {
 }
 
 
+/*----------------------- thank you page -------------------*/
+h1, p{
+    text-align: center;
+}
+h1 {
+    color: white;
+    background-color: #ad023b;
+    padding: 40px;
+    margin: 0;
+}
+p {
+    background-color: #f7bace;
+    padding: 40px;
+}
+
+
 /*------------ Google-Map ---------*/
 .google-map {
     padding-bottom: 50%;
