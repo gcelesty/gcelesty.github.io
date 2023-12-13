@@ -371,6 +371,21 @@ form label.top input:required:valid {
 }
 
 
+/*------------ contact page: maps ---------*/
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}  
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    padding: 10px;
+}
+
+
 /*----------------------- thank you page --------------------------------------*/
 #main-thank-you h1, #main-thank-you p{
     text-align: center;
@@ -384,19 +399,4 @@ form label.top input:required:valid {
 #main-thank-you p {
     background-color: #f7bace;
     padding: 40px;
-}
-
-
-/*------------ Google-Map ---------*/
-.google-map {
-    padding-bottom: 50%;
-    position: relative;
-}  
-.google-map iframe {
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-    padding: 10px;
 }

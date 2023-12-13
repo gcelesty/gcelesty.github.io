@@ -1,0 +1,84 @@
+/* Media Query for screens with a maximum width of 600 pixels */
+@media only screen and (max-width: 600px) {
+    /* Adjustments for smaller screens go here */
+  
+    header {
+      grid-template-columns: 1fr; /* Change header grid layout to a single column */
+    }
+  
+    .social-media {
+      margin-bottom: 10px;
+    }
+  
+    #menu {
+      top: 1rem;
+      right: 1rem;
+    }
+  
+    .navigation {
+      flex-direction: row; /* Change navigation links to horizontal layout */
+    }
+  
+    .navigation li {
+      display: block;
+    }
+  
+    .announcement-banner {
+      padding: 5px;
+    }
+  
+    #img-header {
+      width: 100%;
+    }
+  
+    #rental-types img {
+      width: 100%;
+    }
+  
+    .weather-card {
+      margin: 5px;
+    }
+  
+    #rental-types {
+      grid-template-columns: 1fr; /* Change rental types grid layout to a single column */
+    }
+  
+    #rental-types img {
+      max-width: 100%;
+    }
+  
+    #table {
+      width: 100%;
+    }
+  
+    #reserve-main,
+    #contact-main {
+      grid-template-columns: 1fr; /* Change reservation and contact grid layout to a single column */
+    }
+  
+    form fieldset {
+      max-width: 100%;
+    }
+  
+    .styled-list li {
+      max-width: 100%;
+    }
+  
+    #contact {
+      margin: 10px;
+    }
+  
+    .google-map {
+      padding-bottom: 30%;
+    }
+  
+    .google-map iframe {
+      padding: 5px;
+    }
+  
+    #main-thank-you h1,
+    #main-thank-you p {
+      padding: 10px;
+    }
+  }
+  
