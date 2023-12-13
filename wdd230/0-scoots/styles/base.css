@@ -239,6 +239,31 @@ footer {
 }
 
 
+/*-------------------- rentals page: table -----------------------------*/
+.rentals {
+    text-align: center;
+    border-bottom: 100px;
+}
+#table {
+
+  border-collapse: collapse;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+figcaption {
+  width: 100%;
+}
+
 
 
 
