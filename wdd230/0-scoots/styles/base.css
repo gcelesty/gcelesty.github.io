@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -263,6 +263,23 @@ figcaption {
 }
 
 
+/*-----------------------------revervations page: layout ------------------*/
+#reserve-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.reserve-main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*------------------------- reservations page: form ----------------------------*/
 form fieldset {
     border: 4px solid rgb(211, 70, 94);
@@ -302,11 +319,13 @@ form label.sbs{
 }  
 form input.submitBtn{
     border: none;
-    background-color: #4CAF50;
+    background-color: #8a0a8a;
     color: white;
     border-radius: 1rem;
     padding: 0.75rem 1.5rem;
-    margin: 5px 0 2rem 2%;
+    margin: 10px;
+    margin-left: 55px;
+    margin-bottom: 40px;
     width: 96%;
     max-width: 20rem;
     justify-content: center;
@@ -317,6 +336,29 @@ form label.top input:required{
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
+
+
+/*---------reservation page: list -----------*/
+.styled-list li {
+    background-color: #a71646;
+    color: white;
+    padding: 10px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 10px;
+    max-width: 25rem;
+    list-style-type: none;
+}  
+#reservation-title{
+    text-align: center;
+    padding-top: 20px;
+}  
+#contact-info1 h2{
+    text-align: center;
+}
+
 
 /*------------ Google-Map ---------*/
 .google-map {
