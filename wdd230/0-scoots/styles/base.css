@@ -263,8 +263,8 @@ figcaption {
 }
 
 
-/*-----------------------------revervations page: layout ------------------*/
-#reserve-main {
+/*-----------------------------revervations & contact page: layout ------------------*/
+#reserve-main, #contact-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -322,9 +322,8 @@ form input.submitBtn{
     background-color: #8a0a8a;
     color: white;
     border-radius: 1rem;
-    padding: 0.75rem 1.5rem;
+    padding: 10px 15px;
     margin: 10px;
-    margin-left: 55px;
     margin-bottom: 40px;
     width: 96%;
     max-width: 20rem;
@@ -338,7 +337,7 @@ form label.top input:required:valid {
 }
 
 
-/*---------reservation page: list -----------*/
+/*-----------------------reservation page: list ---------------------------*/
 .styled-list li {
     background-color: #a71646;
     color: white;
@@ -360,7 +359,19 @@ form label.top input:required:valid {
 }
 
 
-/*----------------------- thank you page -------------------*/
+/*----------------------------- contact page: additional layout -----------------------------*/
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; 
+}
+#contact h2{
+    margin-bottom: 20px;
+}
+
+
+/*----------------------- thank you page --------------------------------------*/
 #main-thank-you h1, #main-thank-you p{
     text-align: center;
 }
