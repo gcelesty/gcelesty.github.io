@@ -1,37 +1,48 @@
-const url =
-  "https://gcelesty/wdd230/0-scoots/data/vehicles.json";
-const table = document.querySelector("#table");
+const baseURL = "https://gcelesty.github.io/wdd230/0-scoots/";
+const linksURL = "https://gcelesty.github.io/wdd230/0-scoots/data/vechicle.json";
 
-async function getVehicleData() {
-  const response = await fetch(url);
-  const data = await response.json();
-  console.table(data.vehicles);
-  displayVehicles(data.vehicles);
-}
+async function getVehicles() {
+    try {
+      const response = await fetch(linksURL);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data);
+        displayVehicles(data.vechicles);
+      } else {
+        throw Error(await response.text());
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  
+getVehicles();
 
-const displayVehicles = (vehicles) => {
+const tableDiv = document.getElementById("table");
+
+const displayVehicles = function (vehicles) {
+  const table = document.createElement("table");
+
+  // Create table header
+  const headerRow = document.createElement("tr");
+  for (const key in vehicles[0]) {
+    const th = document.createElement("th");
+    th.textContent = key;
+    headerRow.appendChild(th);
+  }
+  table.appendChild(headerRow);
+
+  // Create table rows for each vehicle
   vehicles.forEach((vehicle) => {
-    let tentry = document.createElement("tr");
-    let name = document.createElement("td");
-    let halfReserv = document.createElement("td");
-    let fullReserv = document.createElement("td");
-    let halfWalk = document.createElement("td");
-    let fullWalk = document.createElement("td");
-
-    name.textContent = `${vehicle.type}`;
-    halfReserv.textContent = `${vehicle.halfDayReserv}`;
-    fullReserv.textContent = `${vehicle.fullDayReserv}`;
-    halfWalk.textContent = `${vehicle.halfDayWalkin}`;
-    fullWalk.textContent = `${vehicle.fullDayWalkin}`;
-
-    name.style.fontWeight = "bold";
-    tentry.appendChild(name);
-    tentry.appendChild(halfReserv);
-    tentry.appendChild(fullReserv);
-    tentry.appendChild(halfWalk);
-    tentry.appendChild(fullWalk);
-    
-    table.appendChild(tentry);
+    const row = document.createElement("tr");
+    for (const key in vehicle) {
+      const cell = document.createElement("td");
+      cell.textContent = vehicle[key];
+      row.appendChild(cell);
+    }
+    table.appendChild(row);
   });
+
+  // Append the table to the tableDiv
+  tableDiv.appendChild(table);
 };
-getVehicleData();
