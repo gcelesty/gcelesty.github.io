@@ -198,7 +198,7 @@ footer {
 
 
 /*------- home page: weather portion ------------*/
-#weather h2,h4{
+#weather h2,p{
     text-align: center;
 }
 .weather-card{    
