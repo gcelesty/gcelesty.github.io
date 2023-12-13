@@ -21,28 +21,20 @@ getVehicles();
 const tableDiv = document.getElementById("table");
 
 const displayVehicles = function (vehicles) {
-  const table = document.createElement("table");
-
-  // Create table header
-  const headerRow = document.createElement("tr");
-  for (const key in vehicles[0]) {
-    const th = document.createElement("th");
-    th.textContent = key;
-    headerRow.appendChild(th);
-  }
-  table.appendChild(headerRow);
-
-  // Create table rows for each vehicle
-  vehicles.forEach((vehicle) => {
-    const row = document.createElement("tr");
-    for (const key in vehicle) {
-      const cell = document.createElement("td");
-      cell.textContent = vehicle[key];
-      row.appendChild(cell);
-    }
-    table.appendChild(row);
-  });
-
-  // Append the table to the tableDiv
-  tableDiv.appendChild(table);
-};
+    const table = document.createElement("table");
+  
+    // Create table rows for each vehicle
+    vehicles.forEach((vehicle) => {
+      const row = document.createElement("tr");
+      for (const key in vehicle) {
+        const cell = document.createElement("td");
+        cell.textContent = vehicle[key];
+        row.appendChild(cell);
+      }
+      table.appendChild(row);
+    });
+  
+    // Append the table to the tableDiv
+    tableDiv.appendChild(table);
+  };
+  

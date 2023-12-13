@@ -245,9 +245,8 @@ footer {
     border-bottom: 100px;
 }
 #table {
-
   border-collapse: collapse;
-  width: 100%;
+  width: 80%;
   padding: 20px;
   margin: auto;
 }

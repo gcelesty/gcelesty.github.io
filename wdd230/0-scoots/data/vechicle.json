@@ -1,14 +1,6 @@
 {
     "vechicles": [
         {
-            "type": "Rental Type",
-            "capacity": "Max Persons",
-            "halfDayReserv": "Reservation - Half Day(3 hr)",
-            "fullDayReserv": "Reservation - Full Day",
-            "halfDayWalkin": "Walk in - Half Day (3 hr)",
-            "fullDayWalkin": "Walk in - Full Day"
-        },
-        {
             "type": "Honda Metro Scooter",
             "capacity": 1,
             "halfDayReserv": "$20",
