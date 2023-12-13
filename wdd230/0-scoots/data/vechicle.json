@@ -3,10 +3,10 @@
         {
             "type": "Rental Type",
             "capacity": "Max Persons",
-            "halfDayReserv": "Half Day (3 hr)",
-            "fullDayReserv": "Full Day",
-            "halfDayWalkin": "Half Day (3 hr)",
-            "fullDayWalkin": "Full Day"
+            "halfDayReserv": "Reservations - Half Day (3 hr)",
+            "fullDayReserv": "Reservations - Full Day",
+            "halfDayWalkin": "Walk in - Half Day (3 hr)",
+            "fullDayWalkin": "Walk in - Full Day"
         },
         {
             "type": "Honda Metro Scooter",
