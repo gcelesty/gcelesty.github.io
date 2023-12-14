@@ -17,16 +17,20 @@
     }
   
     #menu {
-      top: 1rem;
-      right: 1rem;
+      display: none;
     }
   
     .navigation {
-      flex-direction: row; 
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      text-align: center;
+      background-color: whitesmoke;
     }
   
     .navigation li {
       display: block;
+      padding: 10px;
     }
   
     .announcement-banner {
